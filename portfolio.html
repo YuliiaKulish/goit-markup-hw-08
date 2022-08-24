@@ -91,28 +91,29 @@
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <!-- Кнопки -->
-          <ul class="filter">
+          <ul class="list filter">
             <li class="filter__item">
-              <button class="filter__button" type="button">Все</button>
+              <button type="button" class="filter__button">Все</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Веб-сайти</button>
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Додатки</button>
+              <button type="button" class="filter__button">Приложения</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Дизайн</button>
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Маркетинг</button>
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
           <!-- Examples -->
-          <ul class="examples">
-            <li class="examples__item">
-              <a class="examples__link" href="">
-                <div class="examples__box">
+
+          <ul class="list projects">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -136,13 +137,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-1.jpg"
                       alt="Веб-сайт"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -150,15 +151,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Технокряк</h2>
-                  <p class="examples__article">Веб-сайт</p>
+                <div class="card__meta">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -179,12 +180,12 @@
                       "
                       media="(min-width: 1200px)" />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-2.jpg"
                       alt="Постер"
                   /></picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -192,17 +193,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
-                  <p class="examples__article">Дизайн</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__text">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -226,13 +225,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-3.jpg"
-                      alt="Логотип приложения"
+                      alt="Логотип"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -240,15 +239,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Ресторан Seafood</h2>
-                  <p class="examples__article">Додаток</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__text">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -272,13 +271,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-4.jpg"
-                      alt="Наушники"
+                      alt="Навушники"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -286,15 +285,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Проєкт Prime</h2>
-                  <p class="examples__article">Маркетинг</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Проєкт Prime</h2>
+                  <p class="card__text">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -318,13 +317,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-5.jpg"
-                      alt="Коробки"
+                      alt="Бокси"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -332,15 +331,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Проєкт Boxes</h2>
-                  <p class="examples__article">Додаток</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Проєкт Boxes</h2>
+                  <p class="card__text">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -364,13 +363,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-6.jpg"
                       alt="Веб-сайт"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -378,15 +377,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Inspiration has no Borders</h2>
-                  <p class="examples__article">Веб-сайт</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Inspiration has no Borders</h2>
+                  <p class="card__text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -410,13 +409,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-7.jpg"
-                      alt="Журнал"
+                      alt="Лімітоване видання"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -424,15 +423,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Видання Limited Edition</h2>
-                  <p class="examples__article">Дизайн</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Видання Limited Edition</h2>
+                  <p class="card__text">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -456,13 +455,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-8.jpg"
-                      alt="Ярлык лейбла"
+                      alt="Ярлик"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -470,15 +469,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Проект LAB</h2>
-                  <p class="examples__article">Маркетинг</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Проєкт LAB</h2>
+                  <p class="card__text">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li class="examples__item">
-              <a class="examples__link" href=""
-                ><div class="examples__box">
+            <li class="projects__item">
+              <a href="#" class="link projects__link">
+                <div class="card">
                   <picture>
                     <source
                       srcset="
@@ -502,13 +501,13 @@
                       media="(min-width: 1200px)"
                     />
                     <img
-                      class="card-set__img"
+                      class="card__img"
                       src="./images/mobile/portfolio-9.jpg"
-                      alt="Человек печатает на нетбуке"
+                      alt="Сайт"
                     />
                   </picture>
-                  <div class="overlay">
-                    <p class="overlay__text">
+                  <div class="card__overlay">
+                    <p class="card__discription">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -516,11 +515,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples__text">
-                  <h2 class="examples__title">Growing Business</h2>
-                  <p class="examples__article">Додаток</p>
-                </div></a
-              >
+                <div class="card__meta">
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__text">Додаток</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -621,5 +620,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
