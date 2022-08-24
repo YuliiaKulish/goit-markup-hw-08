@@ -27,7 +27,7 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: 100vh;
@@ -57,6 +57,12 @@
 
 .menu-button .icon-cross {
   display: none;
+}
+
+.menu-button.is-open {
+  top: 10px;
+  right: 15px;
+  position: fixed;
 }
 
 .menu-button.is-open .icon-cross {
