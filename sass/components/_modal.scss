@@ -1,0 +1,226 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity $anim, visibility $anim;
+
+  @media screen and (max-width: 480px) {
+    padding: 94px 15px;
+    overflow-y: scroll;
+  }
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.modal {
+  background-color: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 101;
+
+  @media screen and (max-width: 480px) {
+    position: relative;
+  }
+
+  @media screen and (min-width: 481px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $anim;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.modal__button-closed {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-right: 8px;
+
+  background: $primary-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: fill $anim;
+}
+
+.modal__button-closed:hover .modal__icon-closed,
+.modal__button-closed:focus .modal__icon-closed {
+  fill: $primary-accent-color;
+}
+
+.service-order {
+  padding: 40px;
+}
+
+.modal__title {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__field:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill $anim;
+}
+
+.form__input:focus + .form__icon {
+  fill: $primary-accent-color;
+}
+
+.form__input {
+  padding: 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border $anim;
+}
+
+.form__input:focus,
+.form__group textarea:focus {
+  border: 1px solid $primary-accent-color;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border $anim;
+}
+
+.form__field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  cursor: pointer;
+
+  //   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__icon {
+  fill: none;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: fill $anim,
+    background $anim;
+}
+
+.checkbox__input:checked + .checkbox__icon {
+  fill: $primary-bg-color;
+  background: $primary-accent-color;
+  border: transparent;
+  border-radius: 2px;
+}
+
+.checkbox__link {
+  text-decoration-line: underline;
+  color: $primary-accent-color;
+}
+
+.form__button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: $primary-bg-color;
+  background: $primary-accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
